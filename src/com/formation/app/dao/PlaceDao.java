@@ -3,11 +3,10 @@ package com.formation.app.dao;
 import java.util.List;
 
 public interface PlaceDao <ID, Place> {
-    Long createPlace(Place place);
-    Place read (ID id);
+    Place createPlace(Place place);
     List<Place> findAllPlace();
-    Long findPlaceById(Long id);
-    boolean updatePlace(Place place);
-    boolean removePlace(ID id);
+    Place findPlaceById(Long id);
+    Boolean updatePlace(Place place);
+    Boolean removePlace(ID id);
 
 }

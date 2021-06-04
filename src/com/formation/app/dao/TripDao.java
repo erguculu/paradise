@@ -3,12 +3,11 @@ package com.formation.app.dao;
 import java.util.List;
 
 public interface TripDao <ID, Trip> {
-    Long createTrip(Trip trip);
-    Trip read(ID id);
+    Trip createTrip(Trip trip);
     List<Trip> findAllTrip();
-    Long findTripById(Long id);
-    boolean updateTrip(Trip trip);
-    boolean removeTrip(ID trip);
+    Trip findTripById(Long id);
+    Boolean updateTrip(Trip trip);
+    Boolean removeTrip(ID id);
 
 
 }
